@@ -1,35 +1,20 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
-import WarbossInMegaArmour from '../assets/images/warboss_in_mega_armour.png'
+import {Text, View, Image, ImageBackground } from 'react-native'
+import { Link } from 'expo-router'
+import images from '../assets/images'
+import { textStyles } from '../styles/text_styles'
+import { containerStyles } from '../styles/container_styles'
+import { imageStyles } from '../styles/image_styles'
 import React from 'react'
 
 const Home = () => {
   return (
-    <View style={ styles.container }>
-      <Text style={ styles.title }>Grim Dark Companion</Text>
-      <Image source={ WarbossInMegaArmour } style={ styles.warboss_in_mega_armour }/>
-    </View>
+    <ImageBackground source={images.WarbossInMegaArmour3} style={ imageStyles.backgroundImage }>
+      <View style={ containerStyles.maxSpaceCenter }>
+        <Text style={ textStyles.title }>Grim Dark Companion</Text>
+      </View>
+      <Link href="">  </Link>
+    </ImageBackground>
   )
 }
 
 export default Home
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#014503',
-    gap: 100
-  },
-  title: {
-    fontSize: 40,
-    fontWeight: 'bold',
-    fontStyle: 'italic',
-    textAlign: 'center',
-  },
-  warboss_in_mega_armour: {
-    width: 200,
-    height: 200,
-    borderRadius: 15
-  }
-})
