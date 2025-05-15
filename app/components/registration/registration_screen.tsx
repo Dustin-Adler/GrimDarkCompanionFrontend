@@ -10,11 +10,11 @@ import SignIn from './sign_in_form'
 import { useState } from 'react'
 
 const registration_screen = () => {
-  const [n, setN] = useState(1); // 1 for registration, 2 for sign in
+  const [formType, setFormType] = useState("register");
 
   const registerOrSignIn = () => {
     let element = null
-    if (n === 1) {
+    if (formType === "register") {
       element = <RegistrationForm />
     } else {
       element = <SignIn />
@@ -23,7 +23,7 @@ const registration_screen = () => {
   }
 
   const toggleForm = () => {
-    setN(n === 1 ? 2 : 1)
+    setFormType(formType === "register" ? "sign-in" : "register")
   }
 
   return (
@@ -33,7 +33,7 @@ const registration_screen = () => {
         <Pressable
           style={buttonStyles.registrationButton}
           onPress={toggleForm}>
-            <Text style={textStyles.button}>{n === 1 ? 'Switch to Sign In' : 'Switch to Registration'}</Text>
+            <Text style={textStyles.button}>{formType === "register" ? 'Switch to Sign In' : 'Switch to Registration'}</Text>
         </Pressable>
         <Link href="/" style={textStyles.link}>To Home Page</Link>
       </View>
