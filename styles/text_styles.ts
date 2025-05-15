@@ -23,11 +23,12 @@ export const textStyles = StyleSheet.create({
   link: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: "rgba(26, 255, 0, 0.85)",
     textAlign: 'center',
+    color: "rgba(26, 255, 0, 0.85)",
     textShadowColor: 'rgba(26, 255, 0, 0.25)',
     textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 2
+    textShadowRadius: 2,
+    marginTop: '5%'
   },
   button: {
     fontSize: 20,

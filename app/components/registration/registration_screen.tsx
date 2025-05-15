@@ -1,15 +1,16 @@
-import { View, ImageBackground } from 'react-native'
+import { View, ImageBackground, Pressable, Text } from 'react-native'
 import { Link } from 'expo-router'
 import images from '../../../assets/images'
 import { imageStyles } from '../../../styles/image_styles'
 import { containerStyles } from '../../../styles/container_styles'
 import { textStyles } from '../../../styles/text_styles'
+import { buttonStyles } from '../../../styles/button_styles'
 import RegistrationForm from './registration_form'
 import SignIn from './sign_in_form'
 import { useState } from 'react'
 
 const registration_screen = () => {
-  const [n, setN] = useState(2); // 1 for registration, 2 for sign in
+  const [n, setN] = useState(1); // 1 for registration, 2 for sign in
 
   const registerOrSignIn = () => {
     let element = null
@@ -21,10 +22,19 @@ const registration_screen = () => {
     return element
   }
 
+  const toggleForm = () => {
+    setN(n === 1 ? 2 : 1)
+  }
+
   return (
     <ImageBackground source={images.WarbossInMegaArmour3} style={imageStyles.backgroundImage}>
       <View style={[containerStyles.maxSpaceCenter, containerStyles.greyscreen]}>
         {registerOrSignIn()}
+        <Pressable
+          style={buttonStyles.registrationButton}
+          onPress={toggleForm}>
+            <Text style={textStyles.button}>{n === 1 ? 'Switch to Sign In' : 'Switch to Registration'}</Text>
+        </Pressable>
         <Link href="/" style={textStyles.link}>To Home Page</Link>
       </View>
     </ImageBackground>
