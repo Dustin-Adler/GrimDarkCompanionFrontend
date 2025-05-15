@@ -5,8 +5,8 @@ import { imageStyles } from '../../../styles/image_styles'
 import { containerStyles } from '../../../styles/container_styles'
 import { textStyles } from '../../../styles/text_styles'
 import { buttonStyles } from '../../../styles/button_styles'
-import RegistrationForm from './registration_form'
-import SignIn from './sign_in_form'
+import RegistrationForm from './_registration_form'
+import SignIn from './_sign_in_form'
 import { useState } from 'react'
 
 const registration_screen = () => {

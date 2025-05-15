@@ -7,12 +7,9 @@ import images from '../assets/images'
 
 const Home = () => {
   return (
-    <ImageBackground source={images.WarbossInMegaArmour3} style={ imageStyles.backgroundImage }>
-      <View style={ containerStyles.maxSpaceCenter }>
-        <Text style={ textStyles.title }>Grim Dark Companion</Text>
-        <Link href="./components/registration/registration_screen" style={textStyles.link}>To Registration Screen</Link>
-      </View>
-    </ImageBackground>
+    <View style={containerStyles.maxSpaceCenter}>
+      
+    </View>
   )
 }
 
