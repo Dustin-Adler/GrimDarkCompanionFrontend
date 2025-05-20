@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const GameIndex = () => {
+const ListItem = () => {
   return (
     <View>
-      <Text>GameIndex</Text>
+      <Text>ListItem</Text>
     </View>
   )
 }
 
-export default GameIndex
+export default ListItem

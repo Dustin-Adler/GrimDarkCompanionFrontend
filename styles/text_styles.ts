@@ -35,5 +35,11 @@ export const textStyles = StyleSheet.create({
     fontWeight: 'bold',
     color: "white",
     textAlign: 'center'
+  },
+  navBarText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'white',
+    textAlign: 'center'
   }
 });

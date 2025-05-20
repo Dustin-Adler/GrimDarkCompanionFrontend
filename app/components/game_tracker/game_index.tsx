@@ -2,12 +2,12 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { containerStyles } from '../../../styles/container_styles'
 
-const ListIndex = () => {
+const GameIndex = () => {
   return (
-    <View style={[containerStyles.tabContent]}>
-      <Text>ListIndex</Text>
+    <View style={containerStyles.tabContent}>
+      <Text>GameIndex</Text>
     </View>
   )
 }
 
-export default ListIndex
+export default GameIndex

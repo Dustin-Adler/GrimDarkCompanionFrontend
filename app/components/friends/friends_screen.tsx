@@ -1,16 +1,16 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import MainNav from '../nav_bar/_main_nav'
-import GameIndex from './game_index'
 import { containerStyles } from '../../../styles/container_styles'
+import FriendsList from './friends_list'
 
-const GameTracker = () => {
+const Friends = () => {
   return (
     <View style={containerStyles.maxSpaceCenter}>
       <MainNav/>
-      <GameIndex/>
+      <FriendsList/>
     </View>
   )
 }
 
-export default GameTracker
+export default Friends
