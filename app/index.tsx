@@ -1,16 +1,14 @@
-import {Text, View, ImageBackground, Button } from 'react-native'
-import { Link } from 'expo-router'
-import { textStyles } from '../styles/text_styles'
+import { View } from 'react-native'
 import { containerStyles } from '../styles/container_styles'
-import { imageStyles } from '../styles/image_styles'
-import images from '../assets/images'
 import MainNav from './components/nav_bar/_main_nav'
-import ListIndex from './components/home/list_index'
+import ListIndex from './components/home/_list_index'
+import SearchBar from './components/search_bar/_search_bar'
 
 const Home = () => {
   return (
     <View style={containerStyles.maxSpaceCenter}>
       <MainNav/>
+      <SearchBar/>
       <ListIndex/>
     </View>
   )

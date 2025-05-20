@@ -41,5 +41,8 @@ export const textStyles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     textAlign: 'center'
+  },
+  searchButtonText: {
+    fontSize: 10
   }
 });

@@ -7,7 +7,6 @@ export const containerStyles = StyleSheet.create({
     height: '100%',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    // backgroundColor: 'white'
   },
   tabContent: {
     flex: 1,
@@ -15,11 +14,11 @@ export const containerStyles = StyleSheet.create({
     height: '100%',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    paddingTop: '5%',
+    padding: '1%',
     backgroundColor: 'rgb(9, 108, 16)',
     borderLeftWidth: 4,
     borderRightWidth: 4,
-    borderColor: 'black'
+    borderColor: 'black',
   },
   greyscreen: {
     backgroundColor: 'rgba(0, 0, 0, 0.3)'
@@ -59,5 +58,27 @@ export const containerStyles = StyleSheet.create({
     width: '100%',
     paddingVertical: '5%',
     backgroundColor: 'rgb(136, 0, 0)',
-  } 
+    borderWidth: 4,
+    borderRadius: 10,
+  },
+  searchBar: {
+    flexDirection: 'row',
+    width: '100%',
+    height: '10%',
+    paddingHorizontal: '2%',
+    paddingVertical: '5%',
+    backgroundColor: 'rgb(9, 108, 16)',
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    gap: '4%',
+  },
+  seachbarTextInput: {
+    width: '80%',
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+    borderRadius: 6,
+    textAlign: 'center',
+    fontSize: 14,
+    borderWidth: 1,
+    borderColor: 'rgba(0, 0, 0, 0.2)'
+  }
 });

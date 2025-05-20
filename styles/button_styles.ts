@@ -34,5 +34,14 @@ export const buttonStyles = StyleSheet.create({
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
     borderColor: 'black',
+  },
+  searchButton: {
+    width: '15%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgb(136, 0, 0)',
+    borderWidth: 3,
+    borderRadius: 8,
   }
 })
