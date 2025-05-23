@@ -6,19 +6,26 @@ export const containerStyles = StyleSheet.create({
     width: '100%',
     height: '100%',
     justifyContent: 'flex-start',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   tabContent: {
-    flex: 1,
-    width: '100%',
-    height: '100%',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-    padding: '1%',
+      flex: 1,
+      width: '100%',
+      height: '100%',
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
+      borderLeftWidth: 4,
+      borderRightWidth: 4,
+      borderColor: 'black',
+  },
+  greenBack: {
     backgroundColor: 'rgb(9, 108, 16)',
-    borderLeftWidth: 4,
-    borderRightWidth: 4,
-    borderColor: 'black',
+  },
+  allianceTab: {
+    paddingHorizontal: '1%',
+    paddingTop: '1%',
+    gap: '1%',
+    backgroundColor: 'rgb(52, 52, 52)',
   },
   greyscreen: {
     backgroundColor: 'rgba(0, 0, 0, 0.3)'
@@ -53,6 +60,7 @@ export const containerStyles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     height: '8%',
+    justifyContent: 'space-between'
   },
   listItem: {
     width: '100%',

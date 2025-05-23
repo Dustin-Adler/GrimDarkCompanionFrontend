@@ -10,7 +10,7 @@ export const buttonStyles = StyleSheet.create({
   },
   mainNavTabs: {
     backgroundColor: 'rgb(2, 13, 136)',
-    width: '25%',
+    flex: 1,
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -20,7 +20,7 @@ export const buttonStyles = StyleSheet.create({
     borderBottomWidth: 4,
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
-    borderColor: 'black',
+    borderColor: 'black'
   },
   mainNavTabActive: {
     backgroundColor: 'rgb(9, 108, 16)',
@@ -43,5 +43,32 @@ export const buttonStyles = StyleSheet.create({
     backgroundColor: 'rgb(136, 0, 0)',
     borderWidth: 3,
     borderRadius: 8,
-  }
+  },
+  allianceTabs: {
+    backgroundColor: 'rgb(136, 0, 0)',
+    width: '33%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderTopWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderBottomWidth: 4,
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    borderColor: 'black',
+  },
+  allianceTabActive: {
+    backgroundColor: 'rgb(52, 52, 52)',
+    flex: 1,
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderTopWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    borderColor: 'black',
+  },
 })
